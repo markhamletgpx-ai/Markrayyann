@@ -1,0 +1,199 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+    transition:.4s;
+}
+
+/* Dark Mode */
+body.dark{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#38bdf8;
+    font-size:30px;
+    font-weight:700;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:25px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+.navbar ul li a:hover{
+    color:#38bdf8;
+}
+
+#darkMode{
+    padding:8px 14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#38bdf8;
+    color:white;
+    font-size:18px;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:20px;
+    line-height:1.7;
+}
+
+.hero button{
+    margin-top:35px;
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#2563eb;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.08);
+}
+
+/* Sections */
+.section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:45px;
+    font-size:38px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    margin:25px 0;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+/* Dark Mode Cards */
+body.dark .card{
+    background:#1f2937;
+}
+
+body.dark .navbar{
+    background:#0b1120;
+}
+
+body.dark .hero{
+    background:linear-gradient(135deg,#111827,#1e3a8a);
+}
+
+body.dark .card h3{
+    color:#38bdf8;
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.section h2{
+    font-size:30px;
+}
+
+}
